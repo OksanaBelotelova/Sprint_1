@@ -3,13 +3,10 @@ completed_tasks = ['task_002', 'task_012', 'task_006']
 
 # 1.Перенести 'task_005' из списка new_tasks в список completed_tasks:
 
-for task in new_tasks:
-    if task == 'task_005':
-        new_tasks.remove(task)
-        completed_tasks.append(task)
+completed_tasks.append(new_tasks.pop())
 
-        print(new_tasks)
-        print(completed_tasks)
+print(new_tasks)
+print(completed_tasks)
 
 # 2. Удалить'task_007' из списка new_tasks:
 
